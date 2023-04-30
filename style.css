@@ -1,0 +1,707 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    align-items: right;
+    height: 100vh;
+    background-image: url(images/back-PhotoRoom.png);
+    background-size: cover;
+    background-position:center ;
+    position: relative;
+}
+nav{
+    display : flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 50px;
+}
+nav h1{
+    color:#fff;
+    margin-left: 10%;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0px;
+    height: 1px;
+    background: crimson;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover:after{
+    width: 100px;
+
+}
+
+/*header text*/
+.Main{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+
+.Main p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+} 
+.learn-more{
+    display: inline;
+    color: #fff;
+    text-decoration: none;
+    padding right: 20px;
+    transition : 1s;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+
+}
+.learn-more:hover{
+    border: 1px solid crimson;
+    background: crimson;
+    transition: 1s;
+
+}
+
+/*----ABOUT ME-----*/
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.container{
+    padding: 10px 10%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col1{
+    flex-basis:48% ;
+    padding: 30px 2px;
+}
+.col1 img{
+    width: 100%;
+    height: 75vh;
+
+}
+.col1 h1{
+    padding-top: 0;
+}
+.col1 p{
+    padding: 10px 0 15px;
+    font-weight: 5;
+}
+.row0{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    height: 60vh;
+}
+.info{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.sub-titles{
+    display: flex;
+    margin: auto;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0px;
+    height: 1px;
+    background: crimson;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.tab-links::hover:after{
+    width: 100px;
+}
+.tab-links.active-link::after{
+    width: 50%;
+
+}
+.content ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.content ul li span{
+    font-size: 14px;
+    color: crimson;
+}
+.content{
+    display: none;
+}
+.content.active-content{
+    display: block;
+}
+.container{
+    padding: 10px 10%;
+}
+
+/*----services-----*/
+
+
+#services{
+    margin-top: 100%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 250px;
+}
+.col img{
+
+    width: 40px;
+    padding-top: 30px;
+}
+.services h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: crimson;
+}
+.services h4{  
+    color: crimson;
+}
+.services p {
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.col{
+    flex-basis: 31%;
+    background-color: crimson;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.col img{
+    padding-left: 10px;
+    width: 40px;
+    padding-top: 30px;
+}
+ 
+.col:hover
+{
+    box-shadow: 0 0 10px 0px white;
+}
+@media(max-width : 600px){
+    .row{
+        flex-direction:column ;
+    }
+
+}
+.row2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(32, 43, 47);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: 50vh;
+
+}
+.col2{
+    flex-basis: 31%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-right: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.row2 h3{
+    text-align : center;
+    font-size: 600;
+    margin: s10px 0px;
+    
+}   
+   
+.col2:hover
+{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+
+/*city and tourist*/
+.col5{
+    flex-basis: 32%;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    position: relative;
+    height: 50vh;
+    width: 20vh;
+    margin-left: 1%;
+    margin-bottom: 0px;
+    
+}
+.col5 img{
+    width: 100%;
+    border-radius: 7px;
+    height: 40vh;
+
+}
+.row3{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.service{
+    margin-top: 100%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.service h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: crimson;
+}
+/*contact*/
+
+.Start{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url(https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    height: 60vh;
+    
+}
+.Start h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+
+
+
+/*PERSONALITY*/
+.about3{
+    width: 80%;
+    margin: auto;
+    padding : 70px 0;
+    color: white;
+    height: 88vh;
+    padding-bottom: 130px;
+ 
+
+}
+.col0{
+    flex-basis:48% ;
+    padding: 30px 2px;
+
+}
+.col0 img{
+    width: 100%;
+    height: 50vh;
+
+}
+.col0 h1{
+    padding-top: 0;
+}
+.col0 p{
+    padding: 15px 0 25px;
+}
+.row5{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+}
+/*footer*/
+.contact-side{
+    display: contents;
+    align-items: center;
+}
+.contact-side h2{
+    padding-left: 10%;
+    text-align: left;
+ 
+    color: #fff;
+
+}
+.contact-side p{
+    padding-left: 10%;
+    text-align: left;
+    color: #fff;
+   
+}
+
+.navv-links {
+    padding-top: 0;
+    text-align: right;
+}
+
+.navv-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navv-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.navv-links ul li::after{
+    content: '';
+    width: 0px;
+    height: 1px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navv-links ul li:hover:after{
+    width: 100px;
+
+}
+.header1{
+    min-height: 40vh;
+    width: 100%;
+    background-color: #080808;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+.contact-side {
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.social{
+   text-align: center;
+   padding-left: 9%;
+}
+.social img{
+    width:35px;
+    color: #fff;
+ 
+}
+/*PAGE CONTACT*/
+.Contact-col input, .Contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+
+}
+.row6{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.col3{
+    flex-basis:40% ;
+    padding: 30px 2px;
+}
+.submit{
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    transition: 5s;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background-repeat: space;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.submit:hover{
+    border: 1px solid red;
+    background: red;
+    transition: 1s;
+
+}
+
+.service-con{
+    margin-top: 100%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.service-con h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: crimson;
+}
+
+/*PERSONALITY PAGE*/
+
+.personality{
+    margin-top: 100%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.personality h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: crimson;
+}
+.personality img{
+    width: 60%;
+    height: 60vh;
+    
+}
+.personality p{
+    padding-top: 20px;
+    font-weight: 5;
+    text-align: center;
+}
+
+
+/*CITY PAGE*/
+.city{
+    margin-top: 100%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.city h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: crimson;
+}
+.city img{
+    width: 60%;
+    height: 60vh;
+    
+}
+.city p{
+    padding-top: 20px;
+    font-weight: 5;
+    text-align: center;
+}
+
+/*responsive*/
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(images/mobile.jpg);
+    
+    }
+    .Main{
+        margin-top: 40%;
+        font-size: 12px;
+    }
+    
+    .Main p {
+        font-size: 10px;
+        
+    } 
+    .nav{
+        display : flex;
+        padding: 0px;
+        align-items: right;
+    }
+    .nav-links ul li{
+        list-style: none;
+        font-size: 3px;
+        display: inline;
+        padding: 0px;
+        position: relative;
+    }
+    /*about me*/
+    
+    .container{
+        padding: 30px 5%;
+    }
+    .col1{
+        flex-basis:48% ;
+        padding: 30px 2px;
+    }
+    .col1 img{
+        width: 100%;
+        height: 40vh;
+    
+    }
+    .col1 h1{
+        padding-top: 0;
+        font-size: 20px;
+    }
+    .col1 p{
+        padding: 10px 0 15px;
+        font-size: 12px ;
+        font-weight: 2;
+    }
+    .row0{
+        margin-top: 20%;
+        display: flex;
+        justify-content: space-between;
+        height: 20vh;
+    }
+    .content ul li span{
+        font-size: 12px;
+        color: crimson;
+    }
+    .content.active-content{
+        display: block;
+        font-size: 10px;
+    }
+    /*FAV PEROSNALITY*/
+    .row5{
+            flex-direction:column ;
+    }
+    .col5{
+        flex-basis: 32%;
+        border-radius: 7px;
+        margin-bottom: 30px;
+        position: relative;
+        height: 50vh;
+        width: 20vh;
+        margin-left: 1%;
+        margin-bottom: 0px;
+        
+    }
+    .col5 img{
+        width: 250%;
+        border-radius: 7px;
+        text-align: center;
+        height: 30vh;
+    
+    }
+    .row3{
+        margin-top: 60%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .service{
+        margin-top: 30%;
+    }
+    
+    .service h1{
+        margin-top: 20%;
+        font-size: 25px;
+        font-weight: 300;
+      
+    }
+
+    /*contact us*/
+    .Start{
+        width: 80%;
+        border-radius: 7px;
+        text-align: center;
+        padding: 80px 0;
+        height: 40vh;
+        
+    }
+    .Start h1{
+        font-size: 20px;
+    }
+    /*fotter*/
+    .header1{
+        min-height: 40vh;
+        width: 100%;
+        padding-top: 20%;
+
+    }
+    /*personality page*/
+    .personality img{
+        width: 100%;
+        height: 40vh;
+    }    
+    .personality p{
+        font-size: 15px;
+    }
+
+    .row6{
+        flex-direction: column;
+    }
+
+}
+    
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .Main {
+    padding-top: 60px;
+  }
+  
